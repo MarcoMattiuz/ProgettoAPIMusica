@@ -15,12 +15,14 @@ import javax.xml.bind.Unmarshaller;
 public class App {
   public static void main(String[] args) {
     
-//	  private final key = 
+
     try {
 
 		
     	
-    	URL url = new URL("http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Cher&api_key=c5144fcb4998c2d190c9b8204da76775");
+    	URL url = new URL("http://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=postmalone&api_key="+ System.getenv("LASTFM_KEY"));
+    	
+    	System.out.println(url);
     	
     	HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
