@@ -53,6 +53,25 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
       </plugin>
+     <plugin>
+		<groupId>org.codehaus.mojo</groupId>
+		<artifactId>jaxb2-maven-plugin</artifactId>
+		<version>1.5</version>
+			<executions>
+				<execution>
+				<id>xsd-to-java</id>
+					<goals>
+						<goal>xjc</goal>
+					</goals>
+				</execution>
+			</executions>
+		<configuration>
+		<outputDirectory>target/generated-sources/jaxb</outputDirectory>
+		<schemaDirectory>src/main/xsd</schemaDirectory>
+			<packageName>com.prova.ProgettoAPI</packageName>
+			<schemaFiles>ArtistTopAlbums.xsd</schemaFiles>
+		</configuration>
+	</plugin>
     </plugins>
   </build>
 </project>

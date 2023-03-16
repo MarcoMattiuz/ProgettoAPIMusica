@@ -13,56 +13,45 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 
 public class App {
-  public static void main(String[] args) {
-    
+	public static void main(String[] args) {
 
-    try {
+		try {
 
-		
-    	
-    	URL url = new URL("http://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=postmalone&api_key="+ System.getenv("LASTFM_KEY"));
-    	
-    	System.out.println(url);
-    	
-    	HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setRequestMethod("GET");
-        conn.connect();
-    	
-    	int responceCode = conn.getResponseCode();
-    	
-    	if(responceCode == 200) {
-    		System.out.println("200: OK");
-    		StringBuilder xmlInfomation = new StringBuilder();
-    		Scanner scanner = new Scanner(url.openStream());
-    		
-    		while(scanner.hasNext()) {
-    			xmlInfomation.append(scanner.nextLine());
-    		}
-    		
-    		scanner.close();
-    		
-    		System.out.println(xmlInfomation);
+			URL url = new URL("http://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=postmalone&api_key="
+					+ System.getenv("LASTFM_KEY"));
+
+			System.out.println(url);
+
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod("GET");
+			conn.connect();
+
+			int responceCode = conn.getResponseCode();
+
+			if (responceCode == 200) {
+				System.out.println("200: OK");
+				StringBuilder xmlInfomation = new StringBuilder();
+				Scanner scanner = new Scanner(url.openStream());
+
+				while (scanner.hasNext()) {
+					xmlInfomation.append(scanner.nextLine());
+				}
+
+				scanner.close();
+
+				System.out.println(xmlInfomation);
 
 //    		JAXBContext jaxbContext = JAXBContext.newInstance(note.class);
 //
 //  		Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 //
 //    		note prova = (note) unmarshaller.unmarshal(new StringReader(xmlStr));
-    	}else {
-    		throw new RuntimeException("HttpoResponceCode: " + responceCode);
-    	}
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
+			} else {
+				throw new RuntimeException("HttpoResponceCode: " + responceCode);
+			}
 
-	} catch (Exception e) {
-		System.err.println(e);
+		} catch (Exception e) {
+			System.err.println(e);
+		}
 	}
-  }
 }
