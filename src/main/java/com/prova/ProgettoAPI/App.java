@@ -12,12 +12,20 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 
+import com.prova.ProgettoAPI.Toptracks.Track;
+
+
+
 public class App {
 	public static void main(String[] args) {
 
 		try {
 
-			URL url = new URL("http://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=postmalone&api_key="
+//		URL url = new URL("http://ws.audioscrobbler.com/2.0/?method=artist.getTopAlbums&artist=postmalone&raw=true&api_key="
+//					+ System.getenv("LASTFM_KEY"));
+			
+			
+			URL url = new URL("https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=PostMalone&api_key="
 					+ System.getenv("LASTFM_KEY"));
 
 			System.out.println(url);
@@ -39,13 +47,20 @@ public class App {
 
 				scanner.close();
 
-				System.out.println(xmlInfomation);
+				String xmlOk = xmlInfomation.toString().replaceAll("<lfm status=\\\"ok\\\">", ""); 
+				xmlOk = xmlOk.toString().replaceAll("</lfm>", "");
+				System.out.println(xmlOk);
 
-//    		JAXBContext jaxbContext = JAXBContext.newInstance(note.class);
-//
-//  		Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-//
-//    		note prova = (note) unmarshaller.unmarshal(new StringReader(xmlStr));
+    		JAXBContext jaxbContext = JAXBContext.newInstance(Toptracks.class);
+
+    		Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+//    		new StringReader(xmlInfomation.toString())
+    		Toptracks prova = (Toptracks) unmarshaller.unmarshal(new StringReader(xmlOk.toString()));
+    		for ( Track t : prova.getTrack()) {
+				System.out.println(t.name);
+			}
+    		
+    		System.out.println();
 			} else {
 				throw new RuntimeException("HttpoResponceCode: " + responceCode);
 			}

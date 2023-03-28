@@ -30,15 +30,28 @@ import javax.xml.bind.annotation.XmlValue;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="album">
+ *         &lt;element name="track" maxOccurs="unbounded">
  *           &lt;complexType>
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
  *                   &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="mbid" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *                   &lt;element name="listeners" type="{http://www.w3.org/2001/XMLSchema}unsignedShort"/>
+ *                   &lt;element name="playcount" type="{http://www.w3.org/2001/XMLSchema}unsignedByte"/>
+ *                   &lt;element name="listeners" type="{http://www.w3.org/2001/XMLSchema}unsignedByte"/>
  *                   &lt;element name="url" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="streamable" type="{http://www.w3.org/2001/XMLSchema}unsignedByte"/>
+ *                   &lt;element name="artist">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                           &lt;sequence>
+ *                             &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                             &lt;element name="url" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                           &lt;/sequence>
+ *                         &lt;/restriction>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
  *                   &lt;element name="image" maxOccurs="unbounded">
  *                     &lt;complexType>
  *                       &lt;simpleContent>
@@ -56,6 +69,10 @@ import javax.xml.bind.annotation.XmlValue;
  *         &lt;/element>
  *       &lt;/sequence>
  *       &lt;attribute name="artist" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
+ *       &lt;attribute name="page" use="required" type="{http://www.w3.org/2001/XMLSchema}unsignedByte" />
+ *       &lt;attribute name="perPage" use="required" type="{http://www.w3.org/2001/XMLSchema}unsignedByte" />
+ *       &lt;attribute name="totalPages" use="required" type="{http://www.w3.org/2001/XMLSchema}unsignedByte" />
+ *       &lt;attribute name="total" use="required" type="{http://www.w3.org/2001/XMLSchema}unsignedByte" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -65,38 +82,55 @@ import javax.xml.bind.annotation.XmlValue;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "album"
+    "track"
 })
-@XmlRootElement(name = "topalbums")
-public class Topalbums {
+@XmlRootElement(name = "toptracks")
+public class Toptracks {
 
     @XmlElement(required = true)
-    protected Topalbums.Album album;
+    protected List<Toptracks.Track> track;
     @XmlAttribute(name = "artist", required = true)
     protected String artist;
+    @XmlAttribute(name = "page", required = true)
+    @XmlSchemaType(name = "unsignedByte")
+    protected short page;
+    @XmlAttribute(name = "perPage", required = true)
+    @XmlSchemaType(name = "unsignedByte")
+    protected short perPage;
+    @XmlAttribute(name = "totalPages", required = true)
+    @XmlSchemaType(name = "unsignedByte")
+    protected short totalPages;
+    @XmlAttribute(name = "total", required = true)
+    @XmlSchemaType(name = "unsignedByte")
+    protected short total;
 
     /**
-     * Gets the value of the album property.
+     * Gets the value of the track property.
      * 
-     * @return
-     *     possible object is
-     *     {@link Topalbums.Album }
-     *     
-     */
-    public Topalbums.Album getAlbum() {
-        return album;
-    }
-
-    /**
-     * Sets the value of the album property.
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the track property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Topalbums.Album }
-     *     
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getTrack().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Toptracks.Track }
+     * 
+     * 
      */
-    public void setAlbum(Topalbums.Album value) {
-        this.album = value;
+    public List<Toptracks.Track> getTrack() {
+        if (track == null) {
+            track = new ArrayList<Toptracks.Track>();
+        }
+        return this.track;
     }
 
     /**
@@ -123,6 +157,70 @@ public class Topalbums {
         this.artist = value;
     }
 
+    /**
+     * Gets the value of the page property.
+     * 
+     */
+    public short getPage() {
+        return page;
+    }
+
+    /**
+     * Sets the value of the page property.
+     * 
+     */
+    public void setPage(short value) {
+        this.page = value;
+    }
+
+    /**
+     * Gets the value of the perPage property.
+     * 
+     */
+    public short getPerPage() {
+        return perPage;
+    }
+
+    /**
+     * Sets the value of the perPage property.
+     * 
+     */
+    public void setPerPage(short value) {
+        this.perPage = value;
+    }
+
+    /**
+     * Gets the value of the totalPages property.
+     * 
+     */
+    public short getTotalPages() {
+        return totalPages;
+    }
+
+    /**
+     * Sets the value of the totalPages property.
+     * 
+     */
+    public void setTotalPages(short value) {
+        this.totalPages = value;
+    }
+
+    /**
+     * Gets the value of the total property.
+     * 
+     */
+    public short getTotal() {
+        return total;
+    }
+
+    /**
+     * Sets the value of the total property.
+     * 
+     */
+    public void setTotal(short value) {
+        this.total = value;
+    }
+
 
     /**
      * <p>Java class for anonymous complex type.
@@ -135,9 +233,22 @@ public class Topalbums {
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
      *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="mbid" type="{http://www.w3.org/2001/XMLSchema}string"/>
-     *         &lt;element name="listeners" type="{http://www.w3.org/2001/XMLSchema}unsignedShort"/>
+     *         &lt;element name="playcount" type="{http://www.w3.org/2001/XMLSchema}unsignedByte"/>
+     *         &lt;element name="listeners" type="{http://www.w3.org/2001/XMLSchema}unsignedByte"/>
      *         &lt;element name="url" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *         &lt;element name="streamable" type="{http://www.w3.org/2001/XMLSchema}unsignedByte"/>
+     *         &lt;element name="artist">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                 &lt;sequence>
+     *                   &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *                   &lt;element name="url" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *                 &lt;/sequence>
+     *               &lt;/restriction>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
      *         &lt;element name="image" maxOccurs="unbounded">
      *           &lt;complexType>
      *             &lt;simpleContent>
@@ -159,23 +270,29 @@ public class Topalbums {
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
         "name",
-        "mbid",
+        "playcount",
         "listeners",
         "url",
+        "streamable",
+        "artist",
         "image"
     })
-    public static class Album {
+    public static class Track {
 
         @XmlElement(required = true)
         protected String name;
-        @XmlElement(required = true)
-        protected String mbid;
-        @XmlSchemaType(name = "unsignedShort")
-        protected int listeners;
+        @XmlSchemaType(name = "unsignedByte")
+        protected short playcount;
+        @XmlSchemaType(name = "unsignedByte")
+        protected short listeners;
         @XmlElement(required = true)
         protected String url;
+        @XmlSchemaType(name = "unsignedByte")
+        protected short streamable;
         @XmlElement(required = true)
-        protected List<Topalbums.Album.Image> image;
+        protected Toptracks.Track.Artist artist;
+        @XmlElement(required = true)
+        protected List<Toptracks.Track.Image> image;
         @XmlAttribute(name = "rank", required = true)
         @XmlSchemaType(name = "unsignedByte")
         protected short rank;
@@ -205,34 +322,26 @@ public class Topalbums {
         }
 
         /**
-         * Gets the value of the mbid property.
+         * Gets the value of the playcount property.
          * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
          */
-        public String getMbid() {
-            return mbid;
+        public short getPlaycount() {
+            return playcount;
         }
 
         /**
-         * Sets the value of the mbid property.
+         * Sets the value of the playcount property.
          * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
          */
-        public void setMbid(String value) {
-            this.mbid = value;
+        public void setPlaycount(short value) {
+            this.playcount = value;
         }
 
         /**
          * Gets the value of the listeners property.
          * 
          */
-        public int getListeners() {
+        public short getListeners() {
             return listeners;
         }
 
@@ -240,7 +349,7 @@ public class Topalbums {
          * Sets the value of the listeners property.
          * 
          */
-        public void setListeners(int value) {
+        public void setListeners(short value) {
             this.listeners = value;
         }
 
@@ -269,6 +378,46 @@ public class Topalbums {
         }
 
         /**
+         * Gets the value of the streamable property.
+         * 
+         */
+        public short getStreamable() {
+            return streamable;
+        }
+
+        /**
+         * Sets the value of the streamable property.
+         * 
+         */
+        public void setStreamable(short value) {
+            this.streamable = value;
+        }
+
+        /**
+         * Gets the value of the artist property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link Toptracks.Track.Artist }
+         *     
+         */
+        public Toptracks.Track.Artist getArtist() {
+            return artist;
+        }
+
+        /**
+         * Sets the value of the artist property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link Toptracks.Track.Artist }
+         *     
+         */
+        public void setArtist(Toptracks.Track.Artist value) {
+            this.artist = value;
+        }
+
+        /**
          * Gets the value of the image property.
          * 
          * <p>
@@ -286,13 +435,13 @@ public class Topalbums {
          * 
          * <p>
          * Objects of the following type(s) are allowed in the list
-         * {@link Topalbums.Album.Image }
+         * {@link Toptracks.Track.Image }
          * 
          * 
          */
-        public List<Topalbums.Album.Image> getImage() {
+        public List<Toptracks.Track.Image> getImage() {
             if (image == null) {
-                image = new ArrayList<Topalbums.Album.Image>();
+                image = new ArrayList<Toptracks.Track.Image>();
             }
             return this.image;
         }
@@ -311,6 +460,89 @@ public class Topalbums {
          */
         public void setRank(short value) {
             this.rank = value;
+        }
+
+
+        /**
+         * <p>Java class for anonymous complex type.
+         * 
+         * <p>The following schema fragment specifies the expected content contained within this class.
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       &lt;sequence>
+         *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         *         &lt;element name="url" type="{http://www.w3.org/2001/XMLSchema}string"/>
+         *       &lt;/sequence>
+         *     &lt;/restriction>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
+         */
+        @XmlAccessorType(XmlAccessType.FIELD)
+        @XmlType(name = "", propOrder = {
+            "name",
+            "url"
+        })
+        public static class Artist {
+
+            @XmlElement(required = true)
+            protected String name;
+            @XmlElement(required = true)
+            protected String url;
+
+            /**
+             * Gets the value of the name property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
+             */
+            public String getName() {
+                return name;
+            }
+
+            /**
+             * Sets the value of the name property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
+             */
+            public void setName(String value) {
+                this.name = value;
+            }
+
+            /**
+             * Gets the value of the url property.
+             * 
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
+             */
+            public String getUrl() {
+                return url;
+            }
+
+            /**
+             * Sets the value of the url property.
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
+             */
+            public void setUrl(String value) {
+                this.url = value;
+            }
+
         }
 
 
