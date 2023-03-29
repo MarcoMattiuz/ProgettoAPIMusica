@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.StringReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.http.HttpClient;
+//import java.net.http.HttpClient;
 import java.sql.ClientInfoStatus;
 import java.util.Scanner;
 
@@ -57,7 +57,7 @@ public class App {
 //    		new StringReader(xmlInfomation.toString())
     		Toptracks prova = (Toptracks) unmarshaller.unmarshal(new StringReader(xmlOk.toString()));
     		for ( Track t : prova.getTrack()) {
-				System.out.println(t.name);
+				System.out.print(t.getName()+t.getPlaycount()+"\n");
 			}
     		
     		System.out.println();
