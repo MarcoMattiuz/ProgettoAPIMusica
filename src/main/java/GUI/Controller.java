@@ -5,10 +5,10 @@ import java.awt.event.ActionListener;
 
 public class Controller implements ActionListener{
 
-	private Finestra fin;
+	private FinestraPrima fin;
 	private String s;
 	
-	public Controller(Finestra fin) {
+	public Controller(FinestraPrima fin) {
 		this.fin = fin;
 		fin.setAscoltatore(this);
 	}
