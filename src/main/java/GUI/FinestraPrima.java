@@ -30,7 +30,7 @@ public class FinestraPrima extends JFrame {
 		setContentPane(finestra);
 		finestra.setLayout(null);
 		
-		String[] valori = {"1","2","3","4","5","6","7","8","9"};
+		/*String[] valori = {"1","2","3","4","5","6","7","8","9"};
 		
 		comboBox = new JComboBox(valori);
 		comboBox.setToolTipText("");
@@ -38,6 +38,14 @@ public class FinestraPrima extends JFrame {
 		comboBox.setBackground(new Color(176, 224, 230));
 		comboBox.setBounds(111, 77, 107, 31);
 		finestra.add(comboBox);
+		
+		* cose che può fare l'utente:
+		* 
+		* differenza ascolti due album
+		* differenza ascolti tracce
+		* top canzoni ascoltate in base alla regione
+		* top artisti ascoltati in base alla regione
+		*/
 		
 		this.setResizable(false);
 		this.setVisible(true);
