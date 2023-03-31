@@ -8,10 +8,10 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="name" type="xs:string" />
-              <xs:element name="playcount" type="xs:unsignedByte" />
-              <xs:element name="listeners" type="xs:unsignedByte" />
+              <xs:element name="playcount" type="xs:string" />
+              <xs:element name="listeners" type="xs:string" />
               <xs:element name="url" type="xs:string" />
-              <xs:element name="streamable" type="xs:unsignedByte" />
+              <xs:element name="streamable" type="xs:string" />
               <xs:element name="artist">
                 <xs:complexType>
                   <xs:sequence>

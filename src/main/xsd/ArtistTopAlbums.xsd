@@ -1,15 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="topalbums">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="album">
+        <xs:element maxOccurs="unbounded" name="album">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="name" type="xs:string" />
-              <xs:element name="mbid" type="xs:string" />
-              <xs:element name="listeners" type="xs:unsignedShort" />
+              <xs:element name="playcount" type="xs:unsignedInt" />
+              <xs:element minOccurs="0" name="mbid" type="xs:string" />
               <xs:element name="url" type="xs:string" />
+              <xs:element name="artist">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="mbid" type="xs:string" />
+                    <xs:element name="url" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
               <xs:element maxOccurs="unbounded" name="image">
                 <xs:complexType>
                   <xs:simpleContent>
@@ -20,11 +30,14 @@
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="rank" type="xs:unsignedByte" use="required" />
           </xs:complexType>
         </xs:element>
       </xs:sequence>
       <xs:attribute name="artist" type="xs:string" use="required" />
+      <xs:attribute name="page" type="xs:unsignedByte" use="required" />
+      <xs:attribute name="perPage" type="xs:unsignedByte" use="required" />
+      <xs:attribute name="totalPages" type="xs:unsignedShort" use="required" />
+      <xs:attribute name="total" type="xs:unsignedShort" use="required" />
     </xs:complexType>
   </xs:element>
 </xs:schema>

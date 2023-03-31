@@ -69,7 +69,7 @@
 		<outputDirectory>target/generated-sources/jaxb</outputDirectory>
 		<schemaDirectory>src/main/xsd</schemaDirectory>
 			<packageName>com.prova.ProgettoAPI</packageName>
-		<!-- 	<schemaFiles>ArtistTopAlbums.xsd</schemaFiles> -->
+		<schemaFiles>ArtistTopAlbums.xsd</schemaFiles>
 		</configuration>
 	</plugin>
     </plugins>

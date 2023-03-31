@@ -1,11 +1,728 @@
-<topalbums artist="Cher">
-  <album rank="1">
-    <name>Believe</name>
-    <mbid>61bf0388-b8a9-48f4-81d1-7eb02706dfb0</mbid>
-    <listeners>24486</listeners>
-    <url>http://www.last.fm/music/Cher/Believe</url>
-    <image size="small">...</image>
-    <image size=" medium">...</image>
-    <image size="large">...</image>
-  </album>
-</topalbums>
+<topalbums artist="Cher" page="1" perPage="50" totalPages="774" total="38651">
+    <album>
+      <name>Believe</name>
+      <playcount>4609123</playcount>
+      <mbid>63b3a8ca-26f2-4e2b-b867-647a6ec2bebd</mbid>
+      <url>https://www.last.fm/music/Cher/Believe</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/3b54885952161aaea4ce2965b2db1638.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/3b54885952161aaea4ce2965b2db1638.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/3b54885952161aaea4ce2965b2db1638.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/3b54885952161aaea4ce2965b2db1638.png</image>
+    </album>
+    <album>
+      <name>The Very Best of Cher</name>
+      <playcount>1741573</playcount>
+      <mbid>a7e2dad7-e733-4bee-9db1-b31e3183eaf5</mbid>
+      <url>https://www.last.fm/music/Cher/The+Very+Best+of+Cher</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/0fd942f7e629a01ec2d067e41464ff5d.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/0fd942f7e629a01ec2d067e41464ff5d.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/0fd942f7e629a01ec2d067e41464ff5d.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/0fd942f7e629a01ec2d067e41464ff5d.png</image>
+    </album>
+    <album>
+      <name>Heart of Stone</name>
+      <playcount>1529090</playcount>
+      <mbid>7468fc70-9cba-4bad-a2a8-4201221f54fe</mbid>
+      <url>https://www.last.fm/music/Cher/Heart+of+Stone</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/e8f76af3d702f7850ba5a4c9fa055030.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/e8f76af3d702f7850ba5a4c9fa055030.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/e8f76af3d702f7850ba5a4c9fa055030.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/e8f76af3d702f7850ba5a4c9fa055030.png</image>
+    </album>
+    <album>
+      <name>It's a Man's World</name>
+      <playcount>644829</playcount>
+      <mbid>e4e7db8a-2622-47d3-80a5-91534d523ac5</mbid>
+      <url>https://www.last.fm/music/Cher/It%27s+a+Man%27s+World</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/c2559bc8e033d755a95c19c34400d085.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/c2559bc8e033d755a95c19c34400d085.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/c2559bc8e033d755a95c19c34400d085.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/c2559bc8e033d755a95c19c34400d085.png</image>
+    </album>
+    <album>
+      <name>Cher's Greatest Hits: 1965-1992</name>
+      <playcount>589380</playcount>
+      <url>https://www.last.fm/music/Cher/Cher%27s+Greatest+Hits:+1965-1992</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/1dbe42fcbdbf3d444d42feb18d76897a.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/1dbe42fcbdbf3d444d42feb18d76897a.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/1dbe42fcbdbf3d444d42feb18d76897a.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/1dbe42fcbdbf3d444d42feb18d76897a.png</image>
+    </album>
+    <album>
+      <name>Love Hurts</name>
+      <playcount>625399</playcount>
+      <mbid>d52885f4-5444-4361-a1f3-ac4d079b603d</mbid>
+      <url>https://www.last.fm/music/Cher/Love+Hurts</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/f0c8b6840a1ad44b095dc9e68384d0e4.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/f0c8b6840a1ad44b095dc9e68384d0e4.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/f0c8b6840a1ad44b095dc9e68384d0e4.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/f0c8b6840a1ad44b095dc9e68384d0e4.png</image>
+    </album>
+    <album>
+      <name>Living Proof</name>
+      <playcount>848880</playcount>
+      <mbid>182a2ec8-f717-4e06-a88e-604db80ab4aa</mbid>
+      <url>https://www.last.fm/music/Cher/Living+Proof</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/3c84e9ba3b7757328d2d954c3452fd6a.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/3c84e9ba3b7757328d2d954c3452fd6a.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/3c84e9ba3b7757328d2d954c3452fd6a.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/3c84e9ba3b7757328d2d954c3452fd6a.png</image>
+    </album>
+    <album>
+      <name>The Greatest Hits</name>
+      <playcount>563286</playcount>
+      <mbid>023af53b-2a8f-467e-aadc-307b3372ecc2</mbid>
+      <url>https://www.last.fm/music/Cher/The+Greatest+Hits</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2563ce273c65e39dfe7ea691752237fe.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2563ce273c65e39dfe7ea691752237fe.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2563ce273c65e39dfe7ea691752237fe.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2563ce273c65e39dfe7ea691752237fe.png</image>
+    </album>
+    <album>
+      <name>Dancing Queen</name>
+      <playcount>931183</playcount>
+      <url>https://www.last.fm/music/Cher/Dancing+Queen</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/6a1e5db8a6831635bcba07652d48431f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/6a1e5db8a6831635bcba07652d48431f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/6a1e5db8a6831635bcba07652d48431f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/6a1e5db8a6831635bcba07652d48431f.png</image>
+    </album>
+    <album>
+      <name>Half Breed</name>
+      <playcount>165524</playcount>
+      <mbid>95945817-ebd8-4d3e-bb5f-fcb22de001ca</mbid>
+      <url>https://www.last.fm/music/Cher/Half+Breed</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/75bfb65988650dd70014a64dc1c60380.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/75bfb65988650dd70014a64dc1c60380.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/75bfb65988650dd70014a64dc1c60380.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/75bfb65988650dd70014a64dc1c60380.png</image>
+    </album>
+    <album>
+      <name>Gypsys, Tramps & Thieves</name>
+      <playcount>323673</playcount>
+      <mbid>ac1d49a5-611e-4895-921d-83cbec6d1df6</mbid>
+      <url>https://www.last.fm/music/Cher/Gypsys,+Tramps+&+Thieves</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/78851f1f73d714f213d2d8ca54b773e7.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/78851f1f73d714f213d2d8ca54b773e7.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/78851f1f73d714f213d2d8ca54b773e7.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/78851f1f73d714f213d2d8ca54b773e7.png</image>
+    </album>
+    <album>
+      <name>Cher</name>
+      <playcount>436240</playcount>
+      <mbid>368fc15c-e01c-4ad8-8fb3-26c44c695c84</mbid>
+      <url>https://www.last.fm/music/Cher/Cher</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/00d51d34b6113534ebb1748d527dc1a2.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/00d51d34b6113534ebb1748d527dc1a2.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/00d51d34b6113534ebb1748d527dc1a2.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/00d51d34b6113534ebb1748d527dc1a2.png</image>
+    </album>
+    <album>
+      <name>The Best of Cher</name>
+      <playcount>73178</playcount>
+      <mbid>0128541a-3b4e-4bb9-8b82-344ab851c6de</mbid>
+      <url>https://www.last.fm/music/Cher/The+Best+of+Cher</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/3ce954554b1c669cb7a8e22344ccd855.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/3ce954554b1c669cb7a8e22344ccd855.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/3ce954554b1c669cb7a8e22344ccd855.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/3ce954554b1c669cb7a8e22344ccd855.png</image>
+    </album>
+    <album>
+      <name>Burlesque Original Motion Picture Soundtrack</name>
+      <playcount>204874</playcount>
+      <url>https://www.last.fm/music/Cher/Burlesque+Original+Motion+Picture+Soundtrack</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/4c74915a7be542ad84673b8ac9d98905.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/4c74915a7be542ad84673b8ac9d98905.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/4c74915a7be542ad84673b8ac9d98905.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/4c74915a7be542ad84673b8ac9d98905.png</image>
+    </album>
+    <album>
+      <name>Take Me Home & Prisoner</name>
+      <playcount>52120</playcount>
+      <url>https://www.last.fm/music/Cher/Take+Me+Home+&+Prisoner</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/007759bbe10642db8f023e4c276ba6f3.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/007759bbe10642db8f023e4c276ba6f3.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/007759bbe10642db8f023e4c276ba6f3.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/007759bbe10642db8f023e4c276ba6f3.png</image>
+    </album>
+    <album>
+      <name>Gimme! Gimme! Gimme! (A Man After Midnight)</name>
+      <playcount>175343</playcount>
+      <url>https://www.last.fm/music/Cher/Gimme%21+Gimme%21+Gimme%21+(A+Man+After+Midnight)</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/720c2418d2c2c67d060ba600a18d72de.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/720c2418d2c2c67d060ba600a18d72de.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/720c2418d2c2c67d060ba600a18d72de.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/720c2418d2c2c67d060ba600a18d72de.png</image>
+    </album>
+    <album>
+      <name>Gold</name>
+      <playcount>210638</playcount>
+      <mbid>9880981e-90ba-4767-9473-4d058bcd099f</mbid>
+      <url>https://www.last.fm/music/Cher/Gold</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/006f407fc9e04060d2d4ec0cc567e4e6.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/006f407fc9e04060d2d4ec0cc567e4e6.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/006f407fc9e04060d2d4ec0cc567e4e6.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/006f407fc9e04060d2d4ec0cc567e4e6.png</image>
+    </album>
+    <album>
+      <name>Greatest Hits</name>
+      <playcount>118749</playcount>
+      <mbid>ec3f4f8d-1852-4407-9969-7baba18e6e37</mbid>
+      <url>https://www.last.fm/music/Cher/Greatest+Hits</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2442686feafc9454f13028e81dc4edc8.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2442686feafc9454f13028e81dc4edc8.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2442686feafc9454f13028e81dc4edc8.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2442686feafc9454f13028e81dc4edc8.png</image>
+    </album>
+    <album>
+      <name>Closer to the Truth</name>
+      <playcount>821891</playcount>
+      <url>https://www.last.fm/music/Cher/Closer+to+the+Truth</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/4eed0361b0916ddb22ed26b511f61d82.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/4eed0361b0916ddb22ed26b511f61d82.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/4eed0361b0916ddb22ed26b511f61d82.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/4eed0361b0916ddb22ed26b511f61d82.png</image>
+    </album>
+    <album>
+      <name>Strong Enough</name>
+      <playcount>82121</playcount>
+      <mbid>92aa86fd-f1c9-4b74-b2d7-711f9765e936</mbid>
+      <url>https://www.last.fm/music/Cher/Strong+Enough</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/f84c7c1a7f0040b2ac7e8554ab60e0d4.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/f84c7c1a7f0040b2ac7e8554ab60e0d4.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/f84c7c1a7f0040b2ac7e8554ab60e0d4.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/f84c7c1a7f0040b2ac7e8554ab60e0d4.png</image>
+    </album>
+    <album>
+      <name>Take Me Home</name>
+      <playcount>172520</playcount>
+      <mbid>9cd2ad21-ad13-4490-bc58-22943cd89380</mbid>
+      <url>https://www.last.fm/music/Cher/Take+Me+Home</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/d202553ca6f12009f36678f86237bdee.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/d202553ca6f12009f36678f86237bdee.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/d202553ca6f12009f36678f86237bdee.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/d202553ca6f12009f36678f86237bdee.png</image>
+    </album>
+    <album>
+      <name>(null)</name>
+      <playcount>163798</playcount>
+      <url>https://www.last.fm/music/Cher/(null)</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small"/>
+      <image size="medium"/>
+      <image size="large"/>
+      <image size="extralarge"/>
+    </album>
+    <album>
+      <name>Closer To the Truth (Deluxe Version)</name>
+      <playcount>489705</playcount>
+      <mbid>4003e2bb-e868-431f-a086-f53d557606c9</mbid>
+      <url>https://www.last.fm/music/Cher/Closer+To+the+Truth+(Deluxe+Version)</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/60cb3aa538f918b5251210ce41578cd8.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/60cb3aa538f918b5251210ce41578cd8.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/60cb3aa538f918b5251210ce41578cd8.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/60cb3aa538f918b5251210ce41578cd8.png</image>
+    </album>
+    <album>
+      <name>All I Really Want to Do</name>
+      <playcount>141184</playcount>
+      <mbid>5e37a247-b02f-4c29-8349-0655091051ac</mbid>
+      <url>https://www.last.fm/music/Cher/All+I+Really+Want+to+Do</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/42fff15cfd6ce40dbc921e3b6c2bf089.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/42fff15cfd6ce40dbc921e3b6c2bf089.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/42fff15cfd6ce40dbc921e3b6c2bf089.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/42fff15cfd6ce40dbc921e3b6c2bf089.png</image>
+    </album>
+    <album>
+      <name>The Best of Cher (The Imperial Recordings: 1965-1968)</name>
+      <playcount>86065</playcount>
+      <url>https://www.last.fm/music/Cher/The+Best+of+Cher+(The+Imperial+Recordings:+1965-1968)</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/a71d30221df988721bdee846ea87161a.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/a71d30221df988721bdee846ea87161a.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/a71d30221df988721bdee846ea87161a.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/a71d30221df988721bdee846ea87161a.png</image>
+    </album>
+    <album>
+      <name>Love Hurts (UK Mid Price)</name>
+      <playcount>33931</playcount>
+      <url>https://www.last.fm/music/Cher/Love+Hurts+(UK+Mid+Price)</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/0e462b0a71bfc5aa4d3ea7ed388df518.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/0e462b0a71bfc5aa4d3ea7ed388df518.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/0e462b0a71bfc5aa4d3ea7ed388df518.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/0e462b0a71bfc5aa4d3ea7ed388df518.png</image>
+    </album>
+    <album>
+      <name>Greatest Hits: If I Could Turn Back Time</name>
+      <playcount>19506</playcount>
+      <mbid>2fba163f-011f-4c8e-a133-78b397443e78</mbid>
+      <url>https://www.last.fm/music/Cher/Greatest+Hits:+If+I+Could+Turn+Back+Time</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/b9206389bebc2cd12eafaa549ba6e0b3.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/b9206389bebc2cd12eafaa549ba6e0b3.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/b9206389bebc2cd12eafaa549ba6e0b3.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/b9206389bebc2cd12eafaa549ba6e0b3.png</image>
+    </album>
+    <album>
+      <name>20th Century Masters: The Millennium Collection: Best Of Cher</name>
+      <playcount>59121</playcount>
+      <url>https://www.last.fm/music/Cher/20th+Century+Masters:+The+Millennium+Collection:+Best+Of+Cher</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/03018d6665472a64d7e5fd1bceb8f221.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/03018d6665472a64d7e5fd1bceb8f221.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/03018d6665472a64d7e5fd1bceb8f221.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/03018d6665472a64d7e5fd1bceb8f221.png</image>
+    </album>
+    <album>
+      <name>Dark Lady</name>
+      <playcount>161568</playcount>
+      <mbid>aa119742-4d13-408a-a453-be54bc79ba61</mbid>
+      <url>https://www.last.fm/music/Cher/Dark+Lady</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/28fe29bb838bbbc910b326a37e7018de.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/28fe29bb838bbbc910b326a37e7018de.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/28fe29bb838bbbc910b326a37e7018de.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/28fe29bb838bbbc910b326a37e7018de.png</image>
+    </album>
+    <album>
+      <name>Closer to the Truth (Deluxe Edition)</name>
+      <playcount>127869</playcount>
+      <url>https://www.last.fm/music/Cher/Closer+to+the+Truth+(Deluxe+Edition)</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/953d4c9f0d714ed39c70f892f450970f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/953d4c9f0d714ed39c70f892f450970f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/953d4c9f0d714ed39c70f892f450970f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/953d4c9f0d714ed39c70f892f450970f.png</image>
+    </album>
+    <album>
+      <name>Bang Bang: The Early Years</name>
+      <playcount>51139</playcount>
+      <url>https://www.last.fm/music/Cher/Bang+Bang:+The+Early+Years</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/e2655b999d0a4b0e993b31479bf23dd0.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/e2655b999d0a4b0e993b31479bf23dd0.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/e2655b999d0a4b0e993b31479bf23dd0.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/e2655b999d0a4b0e993b31479bf23dd0.png</image>
+    </album>
+    <album>
+      <name>Burlesque</name>
+      <playcount>164444</playcount>
+      <url>https://www.last.fm/music/Cher/Burlesque</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/0a2760c4699a483086c8eba8ebc5eca1.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/0a2760c4699a483086c8eba8ebc5eca1.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/0a2760c4699a483086c8eba8ebc5eca1.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/0a2760c4699a483086c8eba8ebc5eca1.png</image>
+    </album>
+    <album>
+      <name>Fernando (From "Mamma Mia! Here We Go Again")</name>
+      <playcount>39356</playcount>
+      <url>https://www.last.fm/music/Cher/Fernando+(From+%22Mamma+Mia%21+Here+We+Go+Again%22)</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/a1f4e8c6fd31f2c333d510b097ce40f0.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/a1f4e8c6fd31f2c333d510b097ce40f0.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/a1f4e8c6fd31f2c333d510b097ce40f0.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/a1f4e8c6fd31f2c333d510b097ce40f0.png</image>
+    </album>
+    <album>
+      <name>3614 Jackson Highway</name>
+      <playcount>97083</playcount>
+      <mbid>a67bf28f-d1f5-4fcc-b408-4ef625402dc2</mbid>
+      <url>https://www.last.fm/music/Cher/3614+Jackson+Highway</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/4ff33ca218f3b0e3095d675ea5a68084.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/4ff33ca218f3b0e3095d675ea5a68084.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/4ff33ca218f3b0e3095d675ea5a68084.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/4ff33ca218f3b0e3095d675ea5a68084.png</image>
+    </album>
+    <album>
+      <name>If I Could Turn Back Time - Cher's Greatest Hits</name>
+      <playcount>60514</playcount>
+      <url>https://www.last.fm/music/Cher/If+I+Could+Turn+Back+Time+-+Cher%27s+Greatest+Hits</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/ff9b25b827134d87b5dee238f8e8c922.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/ff9b25b827134d87b5dee238f8e8c922.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/ff9b25b827134d87b5dee238f8e8c922.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/ff9b25b827134d87b5dee238f8e8c922.png</image>
+    </album>
+    <album>
+      <name>The Sonny Side of Chér</name>
+      <playcount>54503</playcount>
+      <mbid>555c4b26-a6f8-4fcb-8407-3909e035f003</mbid>
+      <url>https://www.last.fm/music/Cher/The+Sonny+Side+of+Ch%C3%A9r</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/c2e5b3651662a2504b345602496e9c0d.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/c2e5b3651662a2504b345602496e9c0d.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/c2e5b3651662a2504b345602496e9c0d.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/c2e5b3651662a2504b345602496e9c0d.png</image>
+    </album>
+    <album>
+      <name>The Very Best of Cher [Warner Bros #1]</name>
+      <playcount>79482</playcount>
+      <url>https://www.last.fm/music/Cher/The+Very+Best+of+Cher+%5BWarner+Bros+%231%5D</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/3642566fa36747fba307b0fbcd916bb7.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/3642566fa36747fba307b0fbcd916bb7.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/3642566fa36747fba307b0fbcd916bb7.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/3642566fa36747fba307b0fbcd916bb7.png</image>
+    </album>
+    <album>
+      <name>Half-Breed</name>
+      <playcount>77118</playcount>
+      <url>https://www.last.fm/music/Cher/Half-Breed</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/e867b775fa350be3ae4cec7c2c40de4f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/e867b775fa350be3ae4cec7c2c40de4f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/e867b775fa350be3ae4cec7c2c40de4f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/e867b775fa350be3ae4cec7c2c40de4f.png</image>
+    </album>
+    <album>
+      <name>All Or Nothing</name>
+      <playcount>20585</playcount>
+      <mbid>28e23680-1c42-4d87-83ae-d74752538d3c</mbid>
+      <url>https://www.last.fm/music/Cher/All+Or+Nothing</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/5ab99d48a9dd91ec9bc3f1861932c5e3.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/5ab99d48a9dd91ec9bc3f1861932c5e3.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/5ab99d48a9dd91ec9bc3f1861932c5e3.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/5ab99d48a9dd91ec9bc3f1861932c5e3.png</image>
+    </album>
+    <album>
+      <name>Song for the Lonely</name>
+      <playcount>17733</playcount>
+      <mbid>cd4de50c-905a-4045-89a3-6576cc2f4f5b</mbid>
+      <url>https://www.last.fm/music/Cher/Song+for+the+Lonely</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/11b14ef18e1d4dacb2f58d42287e1cc0.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/11b14ef18e1d4dacb2f58d42287e1cc0.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/11b14ef18e1d4dacb2f58d42287e1cc0.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/11b14ef18e1d4dacb2f58d42287e1cc0.png</image>
+    </album>
+    <album>
+      <name>A Different Kind of Love Song</name>
+      <playcount>16609</playcount>
+      <mbid>f8912620-c18c-446b-9183-c558935b7689</mbid>
+      <url>https://www.last.fm/music/Cher/A+Different+Kind+of+Love+Song</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/043c5e02bac471e8e23d1e55145079c0.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/043c5e02bac471e8e23d1e55145079c0.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/043c5e02bac471e8e23d1e55145079c0.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/043c5e02bac471e8e23d1e55145079c0.png</image>
+    </album>
+    <album>
+      <name>Mamma Mia! Here We Go Again (Original Motion Picture Soundtrack)</name>
+      <playcount>42684</playcount>
+      <url>https://www.last.fm/music/Cher/Mamma+Mia%21+Here+We+Go+Again+(Original+Motion+Picture+Soundtrack)</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/95b24a325896087b372e7f64832a4ead.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/95b24a325896087b372e7f64832a4ead.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/95b24a325896087b372e7f64832a4ead.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/95b24a325896087b372e7f64832a4ead.png</image>
+    </album>
+    <album>
+      <name>SOS</name>
+      <playcount>39228</playcount>
+      <url>https://www.last.fm/music/Cher/SOS</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/69dc16655f09609fe2eb558c30f1da1b.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/69dc16655f09609fe2eb558c30f1da1b.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/69dc16655f09609fe2eb558c30f1da1b.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/69dc16655f09609fe2eb558c30f1da1b.png</image>
+    </album>
+    <album>
+      <name>Burlesque (Original Motion Picture Soundtrack)</name>
+      <playcount>89826</playcount>
+      <url>https://www.last.fm/music/Cher/Burlesque+(Original+Motion+Picture+Soundtrack)</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/9ef4eaedbae04430bfc78e23c5d3ee2b.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/9ef4eaedbae04430bfc78e23c5d3ee2b.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/9ef4eaedbae04430bfc78e23c5d3ee2b.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/9ef4eaedbae04430bfc78e23c5d3ee2b.png</image>
+    </album>
+    <album>
+      <name>Believe (Remixes)</name>
+      <playcount>22790</playcount>
+      <url>https://www.last.fm/music/Cher/Believe+(Remixes)</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/a71b70cced42876de6ff3715eebeebe6.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/a71b70cced42876de6ff3715eebeebe6.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/a71b70cced42876de6ff3715eebeebe6.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/a71b70cced42876de6ff3715eebeebe6.png</image>
+    </album>
+    <album>
+      <name>The Music's No Good Without You</name>
+      <playcount>14579</playcount>
+      <mbid>efbb6230-96ce-4820-b8ca-ac5fc73300c2</mbid>
+      <url>https://www.last.fm/music/Cher/The+Music%27s+No+Good+Without+You</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/95cc30c02ff6868132b5ac0281ee03b0.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/95cc30c02ff6868132b5ac0281ee03b0.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/95cc30c02ff6868132b5ac0281ee03b0.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/95cc30c02ff6868132b5ac0281ee03b0.png</image>
+    </album>
+    <album>
+      <name>Woman's World</name>
+      <playcount>60676</playcount>
+      <mbid>5c3a4ee5-3add-4b87-abb3-d4ab7fa50f69</mbid>
+      <url>https://www.last.fm/music/Cher/Woman%27s+World</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/c175ef57aa5a4c338817df9ea83add31.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/c175ef57aa5a4c338817df9ea83add31.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/c175ef57aa5a4c338817df9ea83add31.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/c175ef57aa5a4c338817df9ea83add31.png</image>
+    </album>
+    <album>
+      <name>The Ultimate Collection</name>
+      <playcount>34679</playcount>
+      <url>https://www.last.fm/music/Cher/The+Ultimate+Collection</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/921e01612db09e7981ff3d265def2fea.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/921e01612db09e7981ff3d265def2fea.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/921e01612db09e7981ff3d265def2fea.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/921e01612db09e7981ff3d265def2fea.png</image>
+    </album>
+    <album>
+      <name>If I Could Turn Back Time: Cher's Greatest Hits</name>
+      <playcount>54013</playcount>
+      <url>https://www.last.fm/music/Cher/If+I+Could+Turn+Back+Time:+Cher%27s+Greatest+Hits</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/715456b0eae34bd5cbc66de82b57164c.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/715456b0eae34bd5cbc66de82b57164c.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/715456b0eae34bd5cbc66de82b57164c.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/715456b0eae34bd5cbc66de82b57164c.png</image>
+    </album>
+    <album>
+      <name>The Best Of Cher Volume 2 20th Century Masters The Millennium Collection</name>
+      <playcount>30127</playcount>
+      <url>https://www.last.fm/music/Cher/The+Best+Of+Cher+Volume+2+20th+Century+Masters+The+Millennium+Collection</url>
+      <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>https://www.last.fm/music/Cher</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/29a3ac97918143f0b3b4e5c3cc2a448f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/29a3ac97918143f0b3b4e5c3cc2a448f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/29a3ac97918143f0b3b4e5c3cc2a448f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/29a3ac97918143f0b3b4e5c3cc2a448f.png</image>
+    </album>
+  </topalbums>
