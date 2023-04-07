@@ -51,7 +51,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M5</version>
+        <version>3.1</version>
       </plugin>
      <plugin>
 		<groupId>org.codehaus.mojo</groupId>
@@ -63,14 +63,17 @@
 					<goals>
 						<goal>xjc</goal>
 					</goals>
+					<configuration>
+			<packageName>com.prova.ProgettoAPI</packageName>
+	   		<outputDirectory>target/generated-sources/jaxb</outputDirectory>
+			<schemaDirectory>src/main/xsd</schemaDirectory>
+			
+			<!-- <schemaFiles>ArtistGetInfo.xsd</schemaFiles>-->
+			
+		</configuration>
 				</execution>
 			</executions>
-		<configuration>
-		<outputDirectory>target/generated-sources/jaxb</outputDirectory>
-		<schemaDirectory>src/main/xsd</schemaDirectory>
-			<packageName>com.prova.ProgettoAPI</packageName>
-		<schemaFiles>ArtistTopAlbums.xsd</schemaFiles>
-		</configuration>
+		
 	</plugin>
     </plugins>
   </build>

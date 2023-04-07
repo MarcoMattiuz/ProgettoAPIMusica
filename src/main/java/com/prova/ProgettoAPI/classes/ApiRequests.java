@@ -1,8 +1,8 @@
 package com.prova.ProgettoAPI.classes;
 
-import com.prova.ProgettoAPI.Topalbums;
-import com.prova.ProgettoAPI.Toptracks;
 
+
+import com.prova.ProgettoAPI.*;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
@@ -15,15 +15,15 @@ import java.util.Scanner;
 public final class ApiRequests {
 
     private static final String ARTIST_TOP_TRACKS =
-            "https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist="; //classe JAXB ok
+            "https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist="; //ok
     private static final String ARTIST_TOP_ALBUMS =
-            "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist="; //TODO: da rifare la classe JAXB
+            "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist="; //ok
     private static final String ARTIST_SEARCH =
             "http://ws.audioscrobbler.com/2.0/?method=artist.search&artist="; //TODO: da fare la classe JAXB
-    private static String GEO_TOP_ARTIST =
-            "http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country="; //TODO: da fare la classe JAXB
-    private static final String GEO_TOP_TRACKS =
-            "http://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country="; //TODO: da fare la classe JAXB
+    private static String COUNTRY_TOP_ARTIST =
+            "http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country="; //ok
+    private static final String COUNTRY_TOP_TRACKS =
+            "http://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country="; //ok
     private static final String ARTIST_TRACK_INFO =
             "http://ws.audioscrobbler.com/2.0/?method=track.getInfo&"; //artist=cher&track=believe //TODO: da fare la classe JAXB
 
@@ -75,6 +75,50 @@ public final class ApiRequests {
             URL url = new URL(ARTIST_TOP_TRACKS + artist + "&api_key="
                     + System.getenv("LASTFM_KEY"));
             ret = (Toptracks) request(Toptracks.class,url);
+        }catch (Exception e){
+            System.err.println(e);
+        }
+        return ret;
+
+    }
+    
+    
+    public static Topalbums GETArtistTopAlbums(String artist){
+    	Topalbums ret = null;
+        try {
+
+            URL url = new URL(ARTIST_TOP_ALBUMS + artist + "&api_key="
+                    + System.getenv("LASTFM_KEY"));
+            ret = (Topalbums) request(Topalbums.class,url);
+        }catch (Exception e){
+            System.err.println(e);
+        }
+        return ret;
+
+    }
+    
+    
+    public static Topartists GETCountryTopArtist(String country){
+    	Topartists ret = null;
+        try {
+
+            URL url = new URL(COUNTRY_TOP_ARTIST + country + "&api_key="
+                    + System.getenv("LASTFM_KEY"));
+            ret = (Topartists) request(Topartists.class,url);
+        }catch (Exception e){
+            System.err.println(e);
+        }
+        return ret;
+
+    }
+    
+    public static Tracks GETCountryTopTracks(String country){
+    	Tracks ret = null;
+        try {
+
+            URL url = new URL(COUNTRY_TOP_TRACKS + country + "&api_key="
+                    + System.getenv("LASTFM_KEY"));
+            ret = (Tracks) request(Tracks.class,url);
         }catch (Exception e){
             System.err.println(e);
         }
