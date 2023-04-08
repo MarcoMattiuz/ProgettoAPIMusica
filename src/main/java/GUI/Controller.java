@@ -3,12 +3,14 @@ package GUI;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Controller implements ActionListener{
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 
-	private FinestraPrima fin;
-	private String s;
+public class Controller implements ActionListener, ListSelectionListener{
+
+	private Jframe_Principale fin;
 	
-	public Controller(FinestraPrima fin) {
+	public Controller(Jframe_Principale fin) {
 		this.fin = fin;
 		fin.setAscoltatore(this);
 	}
@@ -16,8 +18,18 @@ public class Controller implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		s = (String) fin.getComboBox().getSelectedItem();
-		System.out.println(s);
+		if(e.getSource() == fin.getDiffBetweenAlbumBTN()) {
+			fin.setAlbumDiff();
+		}else if(e.getSource() == fin.getDiffBetweenSongsBTN()) {
+		}else if(e.getSource() == fin.getTopArtistBTN()) {
+		}else if(e.getSource() == fin.getTopSongsBTN()) {
+		}
+	}
+
+	@Override
+	public void valueChanged(ListSelectionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
