@@ -21,8 +21,11 @@ public class Controller implements ActionListener, ListSelectionListener{
 		if(e.getSource() == fin.getDiffBetweenAlbumBTN()) {
 			fin.setAlbumDiff();
 		}else if(e.getSource() == fin.getDiffBetweenSongsBTN()) {
+			fin.setSongsDiff();
 		}else if(e.getSource() == fin.getTopArtistBTN()) {
+			fin.setTopArtista();
 		}else if(e.getSource() == fin.getTopSongsBTN()) {
+			fin.setTopSongs();
 		}
 	}
 

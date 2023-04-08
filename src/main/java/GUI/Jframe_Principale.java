@@ -88,6 +88,10 @@ public class Jframe_Principale extends JFrame {
 		lblDrake.setBounds(544, 377, 192, 186);
 		finestra.add(lblDrake);
 		
+		diffTraAlbum = new DifferenceAlbumPanel();
+		diffTraTracce = new DifferenceTracksPanel();
+		topArtRegione = new TopArtistbyRegionPanel();
+		topTrackRegione = new TopTracksbyRegionPanel();
 		
 		this.setResizable(false);
 		this.setVisible(true);
@@ -96,9 +100,8 @@ public class Jframe_Principale extends JFrame {
 	public void setAscoltatore(Controller c){
 		topArtistBTN.addActionListener(c);
 		topSongsBTN.addActionListener(c);
-		diffBetweenAlbumBTN.addActionListener(c);;
-		diffBetweenSongsBTN.addActionListener(c);;
-		diffTraAlbum.getBtnHome().addActionListener(c);
+		diffBetweenAlbumBTN.addActionListener(c);
+		diffBetweenSongsBTN.addActionListener(c);
 	}
 
 	
