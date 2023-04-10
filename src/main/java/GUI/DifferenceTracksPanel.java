@@ -31,7 +31,7 @@ public class DifferenceTracksPanel extends JPanel {
 	private JComboBox comboBox_1;
 	private JTextArea textArea;
 	private JLabel lblSelectTwoSongs;
-	private JButton btnNewButton;
+	private JButton ButtonSearch;
 	private JButton btnCompare;
 	
 	public DifferenceTracksPanel() {
@@ -124,14 +124,14 @@ public class DifferenceTracksPanel extends JPanel {
 		gbc_comboBox.gridy = 2;
 		add(comboBox, gbc_comboBox);
 		
-		btnNewButton = new JButton("Search");
-		btnNewButton.setBackground(Color.BLACK);
-		btnNewButton.setForeground(Color.WHITE);
-		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
-		gbc_btnNewButton.insets = new Insets(0, 0, 5, 5);
-		gbc_btnNewButton.gridx = 2;
-		gbc_btnNewButton.gridy = 2;
-		add(btnNewButton, gbc_btnNewButton);
+		ButtonSearch = new JButton("Search");
+		ButtonSearch.setBackground(Color.BLACK);
+		ButtonSearch.setForeground(Color.WHITE);
+		GridBagConstraints gbc_ButtonSearch = new GridBagConstraints();
+		gbc_ButtonSearch.insets = new Insets(0, 0, 5, 5);
+		gbc_ButtonSearch.gridx = 2;
+		gbc_ButtonSearch.gridy = 2;
+		add(ButtonSearch, gbc_ButtonSearch);
 		
 		comboBox_1 = new JComboBox();
 		GridBagConstraints gbc_comboBox_1 = new GridBagConstraints();

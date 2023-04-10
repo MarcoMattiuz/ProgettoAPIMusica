@@ -38,6 +38,10 @@ public class Controller implements ActionListener, ListSelectionListener{
 		}else if(e.getSource() == fin.getTopTrackRegione().getBTNHome()) {
 			fin.getTopTrackRegione().setVisible(false);
 			fin.setHome();
+		}else if(e.getSource() == fin.getTopArtRegione().getButtonSearch()) {
+			fin.getTopArtRegione().addClassifica();
+		}else if(e.getSource() == fin.getTopTrackRegione().getButtonSearch()) {
+			fin.getTopTrackRegione().addClassifica();
 		}
 	}
 

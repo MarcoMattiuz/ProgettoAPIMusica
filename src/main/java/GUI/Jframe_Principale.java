@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
-import com.prova.ProgettoAPI.Topalbums.Album.Image;
+
 
 import javax.swing.JComboBox;
 import javax.imageio.ImageIO;
@@ -91,13 +91,13 @@ public class Jframe_Principale extends JFrame {
 		setContentPane(finestra);
 		finestra.setLayout(null);
 		
-		topArtistBTN = new JButton("Top 3 artists by region");
+		topArtistBTN = new JButton("Top artists by country");
 		topArtistBTN.setForeground(Color.WHITE);
 		topArtistBTN.setBackground(Color.BLACK);
 		topArtistBTN.setBounds(189, 331, 160, 160);
 		finestra.add(topArtistBTN);
 		
-		topSongsBTN = new JButton("Top 3 songs by region");
+		topSongsBTN = new JButton("Top songs by country");
 		topSongsBTN.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -172,6 +172,8 @@ public class Jframe_Principale extends JFrame {
 		diffTraTracce.getBTNHome().addActionListener(c);
 		topArtRegione.getBTNHome().addActionListener(c);
 		topTrackRegione.getBTNHome().addActionListener(c);
+		topArtRegione.getButtonSearch().addActionListener(c);
+		topTrackRegione.getButtonSearch().addActionListener(c);
 	}
 
 	

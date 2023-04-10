@@ -18,16 +18,14 @@ public final class ApiRequests {
             "https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist="; //ok
     private static final String ARTIST_TOP_ALBUMS =
             "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist="; //ok
-    private static final String ARTIST_SEARCH =
-            "http://ws.audioscrobbler.com/2.0/?method=artist.search&artist="; //TODO: da fare la classe JAXB
     private static String COUNTRY_TOP_ARTIST =
             "http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country="; //ok
     private static final String COUNTRY_TOP_TRACKS =
             "http://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country="; //ok
     private static final String ARTIST_TRACK_INFO =
-            "http://ws.audioscrobbler.com/2.0/?method=track.getInfo"; //artist=cher&track=believe //TODO: da fare la classe JAXB
+            "http://ws.audioscrobbler.com/2.0/?method=track.getInfo"; //ok
     private static final String ARTIST_ALBUM_INFO =
-            "https://ws.audioscrobbler.com/2.0/?method=album.getinfo"; //artist=cher&album=believe //TODO: da fare la classe JAXB
+            "https://ws.audioscrobbler.com/2.0/?method=album.getinfo"; //ok
 
 
     private static String cleanString(StringBuilder xmlInfomation){
