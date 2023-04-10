@@ -1,38 +1,50 @@
 package GUI;
 
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JComboBox;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JPanel;
+import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+
+import com.prova.ProgettoAPI.Topalbums;
+import com.prova.ProgettoAPI.Topalbums.Album;
+import com.prova.ProgettoAPI.Toptracks;
+import com.prova.ProgettoAPI.Toptracks.Track;
+import com.prova.ProgettoAPI.classes.ApiRequests;
+import com.prova.ProgettoAPI.classes.Statistics;
+
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.GradientPaint;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.RenderingHints;
-import java.io.File;
-import java.io.IOException;
-
-import javax.swing.JTextField;
-import javax.swing.JLabel;
-import java.awt.Font;
-import javax.swing.JComboBox;
-import javax.swing.JList;
-import javax.swing.JSpinner;
-import javax.swing.SwingConstants;
-import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.awt.Insets;
-import javax.swing.JTextArea;
+import java.awt.RenderingHints;
+
+import javax.swing.JLabel;
 
 public class DifferenceTracksPanel extends JPanel {
 	private JButton BTNHome;
-	private JTextField txtInsertArtistHere;
-	private JTextField txtInsertArtistHere_1;
-	private JComboBox comboBox_1;
+	private JTextField artistSX;
+	private JTextField artistDX;
+	private JComboBox comboBoxDX;
 	private JTextArea textArea;
 	private JLabel lblSelectTwoSongs;
 	private JButton ButtonSearch;
 	private JButton btnCompare;
+	private JComboBox comboBoxSX;
+	private JScrollPane scroll;
 	
 	public DifferenceTracksPanel() {
 		setBackground(Color.DARK_GRAY);
@@ -42,7 +54,7 @@ public class DifferenceTracksPanel extends JPanel {
 		
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[]{60, 70, 121, 70,60};
-		gridBagLayout.rowHeights = new int[]{51, 57, 22,20,60,100,20 };
+		gridBagLayout.rowHeights = new int[]{51, 57, 22,20,60,100 };
 		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 1.0, 0.0};
 		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 1.0};
 		setLayout(gridBagLayout);
@@ -66,7 +78,7 @@ public class DifferenceTracksPanel extends JPanel {
 		add(BTNHome, gbc_BTNHome);
 		
 		JLabel lblTitlePanel_1 = new JLabel();
-		lblTitlePanel_1.setText("Info About Tracks");
+		lblTitlePanel_1.setText("Info About Songs");
 		lblTitlePanel_1.setForeground(Color.WHITE);
 		lblTitlePanel_1.setFont(new Font("Segoe UI Black", Font.PLAIN, 20));
 		GridBagConstraints gbc_lblTitlePanel_1 = new GridBagConstraints();
@@ -77,18 +89,18 @@ public class DifferenceTracksPanel extends JPanel {
 		gbc_lblTitlePanel_1.gridy = 0;
 		add(lblTitlePanel_1, gbc_lblTitlePanel_1);
 		
-		txtInsertArtistHere = new JTextField();
-		txtInsertArtistHere.setToolTipText("Insert Artist here...");
-		txtInsertArtistHere.setForeground(Color.WHITE);
-		txtInsertArtistHere.setBackground(Color.BLACK);
-		GridBagConstraints gbc_txtInsertArtistHere = new GridBagConstraints();
-		gbc_txtInsertArtistHere.fill = GridBagConstraints.HORIZONTAL;
-		gbc_txtInsertArtistHere.anchor = GridBagConstraints.SOUTH;
-		gbc_txtInsertArtistHere.insets = new Insets(0, 0, 5, 5);
-		gbc_txtInsertArtistHere.gridx = 1;
-		gbc_txtInsertArtistHere.gridy = 1;
-		add(txtInsertArtistHere, gbc_txtInsertArtistHere);
-		txtInsertArtistHere.setColumns(10);
+		artistSX = new JTextField();
+		artistSX.setToolTipText("Insert Artist here...");
+		artistSX.setForeground(Color.WHITE);
+		artistSX.setBackground(Color.BLACK);
+		GridBagConstraints gbc_artistSX = new GridBagConstraints();
+		gbc_artistSX.fill = GridBagConstraints.HORIZONTAL;
+		gbc_artistSX.anchor = GridBagConstraints.SOUTH;
+		gbc_artistSX.insets = new Insets(0, 0, 5, 5);
+		gbc_artistSX.gridx = 1;
+		gbc_artistSX.gridy = 1;
+		add(artistSX, gbc_artistSX);
+		artistSX.setColumns(10);
 		
 		JLabel lblSearch = new JLabel();
 		lblSearch.setText("search by Artist");
@@ -102,27 +114,31 @@ public class DifferenceTracksPanel extends JPanel {
 		gbc_lblSearch.gridy = 1;
 		add(lblSearch, gbc_lblSearch);
 		
-		txtInsertArtistHere_1 = new JTextField();
-		txtInsertArtistHere_1.setToolTipText("Insert Artist here...");
-		txtInsertArtistHere_1.setForeground(Color.WHITE);
-		txtInsertArtistHere_1.setBackground(Color.BLACK);
-		txtInsertArtistHere_1.setHorizontalAlignment(SwingConstants.LEFT);
-		txtInsertArtistHere_1.setColumns(10);
-		GridBagConstraints gbc_txtInsertArtistHere_1 = new GridBagConstraints();
-		gbc_txtInsertArtistHere_1.anchor = GridBagConstraints.SOUTHWEST;
-		gbc_txtInsertArtistHere_1.insets = new Insets(0, 0, 5, 5);
-		gbc_txtInsertArtistHere_1.gridx = 3;
-		gbc_txtInsertArtistHere_1.gridy = 1;
-		add(txtInsertArtistHere_1, gbc_txtInsertArtistHere_1);
+		artistDX = new JTextField();
+		artistDX.setToolTipText("Insert Artist here...");
+		artistDX.setForeground(Color.WHITE);
+		artistDX.setBackground(Color.BLACK);
+		artistDX.setHorizontalAlignment(SwingConstants.LEFT);
+		artistDX.setColumns(10);
+		GridBagConstraints gbc_artistDX = new GridBagConstraints();
+		gbc_artistDX.fill = GridBagConstraints.HORIZONTAL;
+		gbc_artistDX.anchor = GridBagConstraints.SOUTHWEST;
+		gbc_artistDX.insets = new Insets(0, 0, 5, 5);
+		gbc_artistDX.gridx = 3;
+		gbc_artistDX.gridy = 1;
+		add(artistDX, gbc_artistDX);
 		
-		JComboBox comboBox = new JComboBox();
-		GridBagConstraints gbc_comboBox = new GridBagConstraints();
-		gbc_comboBox.fill = GridBagConstraints.HORIZONTAL;
-		gbc_comboBox.anchor = GridBagConstraints.NORTH;
-		gbc_comboBox.insets = new Insets(0, 0, 5, 5);
-		gbc_comboBox.gridx = 1;
-		gbc_comboBox.gridy = 2;
-		add(comboBox, gbc_comboBox);
+		comboBoxSX = new JComboBox();
+		GridBagConstraints gbc_comboBoxSX = new GridBagConstraints();
+		gbc_comboBoxSX.anchor = GridBagConstraints.NORTHWEST;
+		gbc_comboBoxSX.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBoxSX.gridx = 1;
+		gbc_comboBoxSX.gridy = 2;
+		comboBoxSX.setPreferredSize(new Dimension(120,20));
+		comboBoxSX.setPrototypeDisplayValue("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+		//setMaximumSize(new Dimension(100,comboBoxSX.getPreferredSize().height));
+		//(100,comboBoxSX.getPreferredSize().height);
+		add(comboBoxSX, gbc_comboBoxSX);
 		
 		ButtonSearch = new JButton("Search");
 		ButtonSearch.setBackground(Color.BLACK);
@@ -133,13 +149,15 @@ public class DifferenceTracksPanel extends JPanel {
 		gbc_ButtonSearch.gridy = 2;
 		add(ButtonSearch, gbc_ButtonSearch);
 		
-		comboBox_1 = new JComboBox();
-		GridBagConstraints gbc_comboBox_1 = new GridBagConstraints();
-		gbc_comboBox_1.insets = new Insets(0, 0, 5, 5);
-		gbc_comboBox_1.fill = GridBagConstraints.HORIZONTAL;
-		gbc_comboBox_1.gridx = 3;
-		gbc_comboBox_1.gridy = 2;
-		add(comboBox_1, gbc_comboBox_1);
+		comboBoxDX = new JComboBox();
+		GridBagConstraints gbc_comboBoxDX = new GridBagConstraints();
+		gbc_comboBoxDX.anchor = GridBagConstraints.WEST;
+		gbc_comboBoxDX.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBoxDX.gridx = 3;
+		gbc_comboBoxDX.gridy = 2;
+		comboBoxDX.setPreferredSize(new Dimension(120,20));
+		comboBoxDX.setPrototypeDisplayValue("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+		add(comboBoxDX, gbc_comboBoxDX);
 		
 		lblSelectTwoSongs = new JLabel();
 		lblSelectTwoSongs.setText("select two songs and compare");
@@ -148,16 +166,24 @@ public class DifferenceTracksPanel extends JPanel {
 		GridBagConstraints gbc_lblSelectTwoSongs = new GridBagConstraints();
 		gbc_lblSelectTwoSongs.insets = new Insets(0, 0, 5, 5);
 		gbc_lblSelectTwoSongs.gridx = 2;
-		gbc_lblSelectTwoSongs.gridy = 4;
+		gbc_lblSelectTwoSongs.gridy = 3;
 		add(lblSelectTwoSongs, gbc_lblSelectTwoSongs);
 		
 		textArea = new JTextArea();
-		GridBagConstraints gbc_textArea = new GridBagConstraints();
-		gbc_textArea.insets = new Insets(0, 0, 5, 5);
-		gbc_textArea.fill = GridBagConstraints.BOTH;
-		gbc_textArea.gridx = 2;
-		gbc_textArea.gridy = 5;
-		add(textArea, gbc_textArea);
+		textArea.setForeground(Color.WHITE);
+		textArea.setBackground(Color.BLACK);
+		textArea.setEditable(false);
+		textArea.setLineWrap(true);
+		
+		scroll = new JScrollPane(textArea);
+		GridBagConstraints gbc_Scroll = new GridBagConstraints();
+		gbc_Scroll.gridwidth = 3;
+		gbc_Scroll.gridheight = 2;
+		gbc_Scroll.insets = new Insets(0, 0, 5, 5);
+		gbc_Scroll.fill = GridBagConstraints.BOTH;
+		gbc_Scroll.gridx = 1;
+		gbc_Scroll.gridy = 4;
+		add(scroll, gbc_Scroll);
 		
 		btnCompare = new JButton("Compare");
 		btnCompare.setForeground(Color.WHITE);
@@ -174,6 +200,18 @@ public class DifferenceTracksPanel extends JPanel {
 		return BTNHome;
 	}
 	
+	public JButton getButtonSearch() {
+		return ButtonSearch;
+	}
+	
+	public JTextField getArtistSX() {
+		return artistSX;
+	}
+
+	public JTextField getArtistDX() {
+		return artistDX;
+	}
+	
 	   @Override
 	    protected void paintComponent(Graphics g) {
 	        super.paintComponent(g);
@@ -188,4 +226,47 @@ public class DifferenceTracksPanel extends JPanel {
 	        g2d.setPaint(gp);
 	        g2d.fillRect(0, 0, w, h);
 	    }
+
+	public JComboBox getComboBoxDX() {
+		return comboBoxDX;
+	}
+
+	public JComboBox getComboBoxSX() {
+		return comboBoxSX;
+	}
+
+	public void setComboBoxDX(String nome) {
+		comboBoxDX.removeAllItems();
+		Toptracks traccie = ApiRequests.GETArtistTopTracks(nome);
+		
+		
+		for (Track iteratore : traccie.getTrack()) {
+			comboBoxDX.addItem(iteratore.getName());
+		}
+	}
+
+	public void setComboBoxSX(String nome) {
+		comboBoxSX.removeAllItems();
+		Toptracks traccie = ApiRequests.GETArtistTopTracks(nome);
+		
+		
+		for (Track iteratore : traccie.getTrack()) {
+			comboBoxSX.addItem(iteratore.getName());
+		}
+	}
+
+	public JButton getBtnCompare() {
+		return btnCompare;
+	}
+
+	public JTextArea getTextArea() {
+		return textArea;
+	}
+	
+	public void comparazione(String nomeSX, String canzoneSX, String nomeDX, String canzoneDX) {
+		com.prova.ProgettoAPI.Track tracciaDestra = ApiRequests.GETTrackInfo(nomeDX, canzoneDX);
+		com.prova.ProgettoAPI.Track TracciaSinistra = ApiRequests.GETTrackInfo(nomeSX, canzoneSX);
+		System.out.print(Statistics.DifferenceTracks(TracciaSinistra, tracciaDestra));
+		textArea.setText(Statistics.DifferenceTracks(TracciaSinistra, tracciaDestra));
+	}
 }

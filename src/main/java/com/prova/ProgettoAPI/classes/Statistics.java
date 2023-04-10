@@ -12,49 +12,47 @@ public final class  Statistics {
 	
 
 	
-	public static String DifferenceAlbums(Album alb1, Album alb2) {
+	public static String DifferenceAlbums(com.prova.ProgettoAPI.Album albumDX,com.prova.ProgettoAPI.Album albumSX) {
 		
-		com.prova.ProgettoAPI.Album album1 = ApiRequests.GETAlbumInfo(alb1.getArtist().getName(), alb1.getName());
-		com.prova.ProgettoAPI.Album album2 = ApiRequests.GETAlbumInfo(alb2.getArtist().getName(), alb2.getName());
 		String ret = "";
 
-		if(album1.getWiki() != null && album2.getWiki() != null ) {
+		if(albumDX.getWiki() != null && albumSX.getWiki() != null ) {
 			String Tags1 = "";
 			String Tags2 = "";
-			String alb1Published = album1.getWiki().getPublished();
-			String alb2Published = album2.getWiki().getPublished();
+			String alb1Published = albumDX.getWiki().getPublished();
+			String alb2Published = albumSX.getWiki().getPublished();
 			String descrAlb1 = "";
 			String descrAlb2 = "";
-			for (Serializable string : album1.getWiki().getSummary().getContent()) {
+			for (Serializable string : albumDX.getWiki().getSummary().getContent()) {
 				descrAlb1 += string;
 			}
-			for (Serializable string : album2.getWiki().getSummary().getContent()) {
+			for (Serializable string : albumSX.getWiki().getSummary().getContent()) {
 				descrAlb2 += string;
 			}
 			
-			for (Tag t : album1.getTags().getTag()) {
+			for (Tag t : albumDX.getTags().getTag()) {
 				Tags1 += t.getName() + " ";
 			}
 			
-			for (Tag t : album2.getTags().getTag()) {
+			for (Tag t : albumSX.getTags().getTag()) {
 				Tags2 += t.getName() + " ";
 			}
 
-			ret += "| " + album1.getName() + " || " + album2.getName() + " |\n" +
-				   "| " + "By: " + album1.getArtist() + " || " + "By: " + album2.getArtist() + " |\n"+
-				   "| " + "Listeners: "+album1.getListeners() + (album1.getListeners()>album2.getListeners() ? " > " : " < ") + album2.getListeners() + " |\n" +
-				   "| " + "PlayCount: " + album1.getPlaycount() + (album1.getPlaycount()>album2.getPlaycount() ? " > " : " < ") + album2.getPlaycount() + " |\n"+
+			ret += "| " + albumDX.getName() + " || " + albumSX.getName() + " |\n" +
+				   "| " + "By: " + albumDX.getArtist() + " || " + "By: " + albumSX.getArtist() + " |\n"+
+				   "| " + "Listeners: "+albumDX.getListeners() + (albumDX.getListeners()>albumSX.getListeners() ? " > " : " < ") + albumSX.getListeners() + " |\n" +
+				   "| " + "PlayCount: " + albumDX.getPlaycount() + (albumDX.getPlaycount()>albumSX.getPlaycount() ? " > " : " < ") + albumSX.getPlaycount() + " |\n"+
 				   "| " + "Publishing date: " + alb1Published + " || " + "Publishing date: " + alb2Published + " |\n" +
 				   "| " + "Tags: " + Tags1 + " || " + "Tags: " + Tags2 + " |\n" + 
 				   "| =============================================================== |\n"+
-				   "| " + album1.getName() +": "+ descrAlb1 + " |\n"+
-				   "| " + album2.getName() +": "+ descrAlb2 + " |\n";
+				   "| " + albumDX.getName() +": "+ descrAlb1 + " |\n"+
+				   "| " + albumSX.getName() +": "+ descrAlb2 + " |\n";
 
 		}else {
-			ret += "| " + album1.getName() + " || " + album2.getName() + " |\n" +
-					   "| " + "By: " + album1.getArtist() + " || " + "By: " + album2.getArtist() + " |\n"+
-					   "| " + "Listeners: "+album1.getListeners() + (album1.getListeners()>album2.getListeners() ? " > " : " < ") + album2.getListeners() + " |\n" +
-					   "| " + "PlayCount: " + album1.getPlaycount() + (album1.getPlaycount()>album2.getPlaycount() ? " > " : " < ") + album2.getPlaycount() + " |\n"+
+			ret += "| " + albumDX.getName() + " || " + albumSX.getName() + " |\n" +
+					   "| " + "By: " + albumDX.getArtist() + " || " + "By: " + albumSX.getArtist() + " |\n"+
+					   "| " + "Listeners: "+albumDX.getListeners() + (albumDX.getListeners()>albumSX.getListeners() ? " > " : " < ") + albumSX.getListeners() + " |\n" +
+					   "| " + "PlayCount: " + albumDX.getPlaycount() + (albumDX.getPlaycount()>albumSX.getPlaycount() ? " > " : " < ") + albumSX.getPlaycount() + " |\n"+
 					   "| " + "No additional Informations found :(" + " |";
 		}
 		
@@ -65,10 +63,8 @@ public final class  Statistics {
 	}
 	
 	
-	public static String DifferenceTracks(com.prova.ProgettoAPI.Toptracks.Track track, com.prova.ProgettoAPI.Toptracks.Track track3) {
+	public static String DifferenceTracks(Track Track1, Track Track2) {
 		
-		Track Track1 = ApiRequests.GETTrackInfo(track.getArtist().getName(), track.getName());
-		Track Track2 = ApiRequests.GETTrackInfo(track3.getArtist().getName(), track3.getName());
 		String ret = "";
 		
 		

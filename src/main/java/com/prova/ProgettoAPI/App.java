@@ -53,16 +53,6 @@ public class App {
 //			albums.getAlbum()) {
 //		System.out.println(t.getName());
 //		}
-	
-	
-		String retAlb = Statistics.DifferenceAlbums(albums.getAlbum().get(5), albums.getAlbum().get(2));
-		
-		System.out.println(retAlb);
-		
-		String retTrk = Statistics.DifferenceTracks(tracks.getTrack().get(2), tracks.getTrack().get(4));
-		
-		System.out.println(retTrk);
-		
 		
 //		for ( com.prova.ProgettoAPI.Tracks.Track t : //attenzione che ci sono classi con lo stesso nome
 //			topTracks.getTrack()) {

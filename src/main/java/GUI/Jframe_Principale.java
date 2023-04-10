@@ -24,6 +24,7 @@ import javax.swing.ImageIcon;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.awt.event.ActionEvent;
@@ -174,6 +175,10 @@ public class Jframe_Principale extends JFrame {
 		topTrackRegione.getBTNHome().addActionListener(c);
 		topArtRegione.getButtonSearch().addActionListener(c);
 		topTrackRegione.getButtonSearch().addActionListener(c);
+		diffTraAlbum.getButtonSearch().addActionListener(c);
+		diffTraAlbum.getBtnCompare().addActionListener(c);
+		diffTraTracce.getButtonSearch().addActionListener(c);
+		diffTraTracce.getBtnCompare().addActionListener(c);
 	}
 
 	
@@ -200,6 +205,7 @@ public class Jframe_Principale extends JFrame {
 	public void setAlbumDiff() {
 		finestra.setVisible(false);
 		diffTraAlbum.setVisible(true);
+		this.setMinimumSize(new Dimension(800, 400));
 		setContentPane(diffTraAlbum);
 	}
 	
