@@ -23,12 +23,18 @@ import com.prova.ProgettoAPI.Toptracks.Track;
 import com.prova.ProgettoAPI.classes.ApiRequests;
 import com.prova.ProgettoAPI.classes.Statistics;
 
+import GUI.Controller;
+import GUI.Jframe_Principale;
+
 
 public class App {
 	
 
 	public static void main(String[] args) throws IOException {
 
+		Jframe_Principale fin = new Jframe_Principale();
+		Controller con = new Controller(fin);
+		
 		Toptracks tracks = ApiRequests.GETArtistTopTracks("Cher");
 		Topalbums albums = ApiRequests.GETArtistTopAlbums("Beatles");
 		Topartists artists = ApiRequests.GETCountryTopArtist("Italy");
@@ -56,6 +62,8 @@ public class App {
 		String retTrk = Statistics.DifferenceTracks(tracks.getTrack().get(2), tracks.getTrack().get(4));
 		
 		System.out.println(retTrk);
+		
+		
 //		for ( com.prova.ProgettoAPI.Tracks.Track t : //attenzione che ci sono classi con lo stesso nome
 //			topTracks.getTrack()) {
 //		System.out.println(t.getName()+" listeners: "+t.getListeners());
