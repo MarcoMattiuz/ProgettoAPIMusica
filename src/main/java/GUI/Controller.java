@@ -26,6 +26,18 @@ public class Controller implements ActionListener, ListSelectionListener{
 			fin.setTopArtista();
 		}else if(e.getSource() == fin.getTopSongsBTN()) {
 			fin.setTopSongs();
+		}else if(e.getSource() == fin.getDiffTraAlbum().getBTNHome()) {
+			fin.getDiffTraAlbum().setVisible(false);
+			fin.setHome();
+		}else if(e.getSource() == fin.getDiffTraTracce().getBTNHome()) {
+			fin.getDiffTraTracce().setVisible(false);
+			fin.setHome();
+		}else if(e.getSource() == fin.getTopArtRegione().getBTNHome()) {
+			fin.getTopArtRegione().setVisible(false);
+			fin.setHome();
+		}else if(e.getSource() == fin.getTopTrackRegione().getBTNHome()) {
+			fin.getTopTrackRegione().setVisible(false);
+			fin.setHome();
 		}
 	}
 
