@@ -25,7 +25,9 @@ public final class ApiRequests {
     private static final String COUNTRY_TOP_TRACKS =
             "http://ws.audioscrobbler.com/2.0/?method=geo.gettoptracks&country="; //ok
     private static final String ARTIST_TRACK_INFO =
-            "http://ws.audioscrobbler.com/2.0/?method=track.getInfo&"; //artist=cher&track=believe //TODO: da fare la classe JAXB
+            "http://ws.audioscrobbler.com/2.0/?method=track.getInfo"; //artist=cher&track=believe //TODO: da fare la classe JAXB
+    private static final String ARTIST_ALBUM_INFO =
+            "https://ws.audioscrobbler.com/2.0/?method=album.getinfo"; //artist=cher&album=believe //TODO: da fare la classe JAXB
 
 
     private static String cleanString(StringBuilder xmlInfomation){
@@ -126,5 +128,50 @@ public final class ApiRequests {
 
     }
 
+    
+    public static Album GETAlbumInfo(String artist, String album ){
+    	Album ret = null;
+    	
+    	artist = artist.replaceAll(" ", "%20");
+    	album = album.replaceAll(" ", "%20");
+    
+    	try {
+
+            URL url = new URL(ARTIST_ALBUM_INFO + "&api_key="
+                    + System.getenv("LASTFM_KEY")
+                    + "&artist="+artist+"&album="+album);
+       
+            System.out.println(url);
+            ret = (Album) request(Album.class,url);
+        }catch (Exception e){
+            System.err.println(e);
+        }
+        return ret;
+        
+
+    }
+    
+    
+    public static Track GETTrackInfo(String artist, String track){
+    	Track ret = null;
+    	
+    	artist = artist.replaceAll(" ", "%20");
+    	track = track.replaceAll(" ", "%20");
+    
+    	try {
+
+            URL url = new URL(ARTIST_TRACK_INFO + "&api_key="
+                    + System.getenv("LASTFM_KEY")
+                    + "&artist="+artist+"&track="+track);
+       
+            System.out.println(url);
+            ret = (Track) request(Track.class,url);
+        }catch (Exception e){
+            System.err.println(e);
+        }
+        return ret;
+        
+
+    }
 
 }
