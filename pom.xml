@@ -64,13 +64,13 @@
 						<goal>xjc</goal>
 					</goals>
 					<configuration>
-			<packageName>com.prova.ProgettoAPI</packageName>
-	   		<outputDirectory>target/generated-sources/jaxb</outputDirectory>
-			<schemaDirectory>src/main/xsd</schemaDirectory>
+						<packageName>com.prova.ProgettoAPI</packageName>
+	   					<outputDirectory>target/generated-sources/jaxb</outputDirectory>
+						<schemaDirectory>src/main/xsd</schemaDirectory>
 			
 			<!-- <schemaFiles>ArtistGetInfo.xsd</schemaFiles>-->
 			
-		</configuration>
+					</configuration>
 				</execution>
 			</executions>
 		

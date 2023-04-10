@@ -88,6 +88,10 @@ public class Jframe_Principale extends JFrame {
 		lblDrake.setBounds(544, 377, 192, 186);
 		finestra.add(lblDrake);
 		
+		diffTraAlbum = new DifferenceAlbumPanel();
+		diffTraTracce = new DifferenceTracksPanel();
+		topArtRegione = new TopArtistbyRegionPanel();
+		topTrackRegione = new TopTracksbyRegionPanel();
 		
 		this.setResizable(false);
 		this.setVisible(true);
@@ -96,9 +100,12 @@ public class Jframe_Principale extends JFrame {
 	public void setAscoltatore(Controller c){
 		topArtistBTN.addActionListener(c);
 		topSongsBTN.addActionListener(c);
-		diffBetweenAlbumBTN.addActionListener(c);;
-		diffBetweenSongsBTN.addActionListener(c);;
-		diffTraAlbum.getBtnHome().addActionListener(c);
+		diffBetweenAlbumBTN.addActionListener(c);
+		diffBetweenSongsBTN.addActionListener(c);
+		diffTraAlbum.getBTNHome().addActionListener(c);
+		diffTraTracce.getBTNHome().addActionListener(c);
+		topArtRegione.getBTNHome().addActionListener(c);
+		topTrackRegione.getBTNHome().addActionListener(c);
 	}
 
 	
@@ -124,22 +131,47 @@ public class Jframe_Principale extends JFrame {
 	
 	public void setAlbumDiff() {
 		finestra.setVisible(false);
+		diffTraAlbum.setVisible(true);
 		setContentPane(diffTraAlbum);
 	}
 	
 	public void setSongsDiff() {
 		finestra.setVisible(false);
+		diffTraTracce.setVisible(true);
 		setContentPane(diffTraTracce);
 	}
 	
 	public void setTopArtista() {
 		finestra.setVisible(false);
+		topArtRegione.setVisible(true);
 		setContentPane(topArtRegione);
 	}
 	
 	public void setTopSongs() {
 		finestra.setVisible(false);
+		topTrackRegione.setVisible(true);
 		setContentPane(topTrackRegione);
+	}
+	
+	public void setHome() {
+		finestra.setVisible(true);
+		setContentPane(finestra);
+	}
+	
+	public DifferenceAlbumPanel getDiffTraAlbum() {
+		return diffTraAlbum;
+	}
+
+	public DifferenceTracksPanel getDiffTraTracce() {
+		return diffTraTracce;
+	}
+
+	public TopArtistbyRegionPanel getTopArtRegione() {
+		return topArtRegione;
+	}
+
+	public TopTracksbyRegionPanel getTopTrackRegione() {
+		return topTrackRegione;
 	}
 	
 }
